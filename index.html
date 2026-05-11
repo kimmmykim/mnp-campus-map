@@ -149,7 +149,7 @@
 <header>
   <div class="header-inner">
     <div class="school-name">Maasai National<br/><span>Polytechnic</span></div>
-    <div class="header-sub">KATTI Nairobi Region 2026 &mdash; Venue Guide</div>
+    <div class="header-sub">KATTI Nairobi Region 2026 Venue Guide</div>
     <div class="gate-pill">
       <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
       Directions from: Main Gate
@@ -162,18 +162,18 @@
   <div class="event-theme">&ldquo;Transforming Tomorrow Today: TVET Powering Bottom-up Transformation through Skilling, Innovation, Robotics and Research&rdquo;</div>
   <div class="event-meta">
     <span class="meta-chip chip-red"> 13th &ndash; 16th May 2026</span>
-    <span class="meta-chip chip-glass"> Maasai National Polytechnic, Nairobi</span>
+    <span class="meta-chip chip-glass"> Maasai National Polytechnic, Kajiado</span>
     <span class="meta-chip chip-glass"> kattinairobireasearch@gmail.com</span>
   </div>
 </div>
 
-<p class="instruction">Tap your department below. <strong>Google Maps</strong> will open with directions from the main gate.</p>
+<p class="instruction">Tap your destinationdepartment below. <strong>Google Maps</strong> will open with directions from the main gate.</p>
 
 <div class="dept-list" id="dept-list"></div>
 
 <footer>
   Maasai National Polytechnic &mdash; Event Navigation Guide<br/>
-  <a href="https://www.google.com/maps/dir/?api=1&origin=-1.852776627475803,36.78179977705452&travelmode=walking" target="_blank" rel="noopener">📍 Open Main Gate in Google Maps</a>
+  <a href="https://www.google.com/maps/dir/?api=1&origin=-1.852776627475803,36.78179977705452" target="_blank" rel="noopener"> Open Main Gate in Google Maps</a>
 </footer>
 
 <script>
@@ -197,8 +197,8 @@
   departments.forEach(dept => {
     const url = `https://www.google.com/maps/dir/?api=1`
       + `&origin=${GATE.lat},${GATE.lng}`
-      + `&destination=${dept.lat},${dept.lng}`
-      + `&travelmode=walking`;
+      + `&destination=${dept.lat},${dept.lng}`;
+      
 
     const a = document.createElement('a');
     a.href = url;
